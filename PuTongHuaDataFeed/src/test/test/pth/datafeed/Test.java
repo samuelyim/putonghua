@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.TreeMap;
 
-import com.test.pth.datafeed.HttpUtility;
+import com.test.pth.datafeed.utils.HttpUtility;
 
 public class Test {
 

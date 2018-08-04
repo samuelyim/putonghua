@@ -1,4 +1,4 @@
-package com.test.pth.datafeed;
+package com.test.pth.datafeed.utils;
 
 import java.io.File;
 import java.io.FileInputStream;

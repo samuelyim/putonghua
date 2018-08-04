@@ -1,4 +1,4 @@
-package com.test.pth.datafeed;
+package com.test.pth.datafeed.utils;
 
 public class PatternFinder {
 

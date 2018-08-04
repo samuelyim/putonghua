@@ -1,22 +1,21 @@
-package com.test.pth.datafeed;
+package com.test.pth.datafeed.utils;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Map;
-
-import javax.net.ssl.HttpsURLConnection;
 
 public class HttpUtility {
 
 	public static String post(String urlPath, Map<String, String> headers, Map<String, String> form) throws IOException {
 		StringBuilder result = new StringBuilder();
 		URL url = new URL(urlPath);
-		HttpsURLConnection con = (HttpsURLConnection) url.openConnection();
+		HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
 		con.setRequestMethod("POST");
 		for (Map.Entry<String, String> entry : headers.entrySet()) {
